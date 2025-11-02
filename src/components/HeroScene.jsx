@@ -1,15 +1,12 @@
 import React from 'react';
-import Spline from '@splinetool/react-spline';
 import { ArrowRight, Play } from 'lucide-react';
+import SafeSpline from './SafeSpline';
 
 export default function HeroScene() {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-black text-white">
       <div className="absolute inset-0">
-        <Spline
-          scene="https://prod.spline.design/5YxL7sRKqGZo4PMQ/scene.splinecode"
-          style={{ width: '100%', height: '100%' }}
-        />
+        <SafeSpline scene="https://prod.spline.design/5YxL7sRKqGZo4PMQ/scene.splinecode" />
       </div>
 
       {/* Subtle gradient + vignette overlays for readability */}
